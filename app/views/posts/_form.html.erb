@@ -11,7 +11,7 @@
     </div>
   <% end %>
  <div class="field">
-<%= f.country_select(:title, {priority_countries: ["FR","BE","MA","TN","DZ"], except: ["EH"]}, , {selected: equest.location.try(:country_code)}) %>
+<%= f.country_select(:title, {priority_countries: ["FR","BE","MA","TN","DZ"], except: ["EH"]}, , {selected: request.location.try(:country_code)}) %>
 </div>
  
 
