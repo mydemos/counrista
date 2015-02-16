@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Counrista</title>
-  <meta name="keywords" content= "default, jobs in #{request.location.country} keywords" />
-  <meta name="description"  content=" jobs in #{request.location.country} Default description"  />
+  <title>Counrista <%= request.location.country %></title>
+  <meta name="keywords" content= "default, jobs in <%= request.location.country %> keywords" />
+  <meta name="description"  content=" jobs in <%= request.location.country %> Default description"  />
 
 <meta property="og:title" content="The Rock"/>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
