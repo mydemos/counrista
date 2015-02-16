@@ -11,6 +11,8 @@
     </div>
   <% end %>
 
+<%= f.country_select(:title, {priority_countries: ["FR","BE","MA","TN","DZ"], except: ["EH"]}, , {:selected => "#{request.location.country_code}"}) %>
+
   <div class="field">
     <%= f.label :title %><br>
     <%= f.text_field :title %>
