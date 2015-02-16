@@ -10,13 +10,12 @@
       </ul>
     </div>
   <% end %>
+ <div class="field">
+<%= f.country_select(:title, {priority_countries: ["FR","BE","MA","TN","DZ"], except: ["EH"]}, , {selected: equest.location.try(:country_code)}) %>
+</div>
+ 
 
-<%= f.country_select(:title, {priority_countries: ["FR","BE","MA","TN","DZ"], except: ["EH"]}, , {:selected => request.location.country.country_code}) %>
-
-  <div class="field">
-    <%= f.label :title %><br>
-    <%= f.text_field :title %>
-  </div>
+  
   <div class="actions">
     <%= f.submit %>
   </div>
