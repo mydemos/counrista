@@ -22,6 +22,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
 gem 'geocoder'
+gem 'country_select', github: 'stefanpenner/country_select'
     
 group :development, :test do
 	gem 'sqlite3'	
