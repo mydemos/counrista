@@ -1,7 +1,7 @@
 <h1>Listing posts</h1>
 
 <fieldset>
-  City: <%= request.location.city %> <br>
+  City: <%= request.location.try(:city) %> <br>
   Country: <%= request.location.country %> <br>
   Country ISO code: <%=  request.location.country_code %> <br>
 </fieldset>
